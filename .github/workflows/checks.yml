@@ -13,7 +13,7 @@ jobs:
           username: ${{ secrets.DOKERHUB_USERNAME }}
           password: ${{ secrets.DOKERHUB_TOKEN }}
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Test
         run: docker compose run --rm app sh -c "python manage.py test"
       - name: Lint
