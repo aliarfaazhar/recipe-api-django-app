@@ -1,7 +1,5 @@
-version: "3.10"
-
 services:
-  web:
+  app:
     build:
       context: .
     ports:
